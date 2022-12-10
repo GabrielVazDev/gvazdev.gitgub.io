@@ -1,0 +1,325 @@
+:root {
+  --color-primary: #917758;
+  --color-secondary: #3c2915;
+  --color-primary-light: #f5eee6;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background-color: black;
+}
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+.home{
+  background-image:url(../imgs/bg-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.home .header .nav ul li {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 180px;
+}
+.home .header .nav ul {
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+.home .header .nav{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.4);
+}
+.home .header .nav ul li a{
+  color: #ffff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 30px;
+  transition: 200ms;
+}
+.home .header .nav ul li a:hover{
+   color: var(--color-primary);
+   border-bottom: 1px solid var(--color-primary);
+}
+.home .header .nav ul li .logo{
+  margin: 20px 0px;
+}
+.home .header .content-home h1{
+  color: var(--color-primary-light);
+  font-size: 60px;
+  font-family:'Poppins', sans-serif;
+  font-weight: bold;
+}
+.home .header .content-home .slogan1{
+  color: var(--color-primary);
+  font-size: 20px;
+  font-family:'raleway', sans-serif;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+.home .header .content-home .slogan2{
+  color: var(--color-primary);
+  font-size: 20px;
+  font-family:'raleway', sans-serif;
+  letter-spacing: 10px;
+}
+.home .header .content-home{
+  position: absolute;
+  height: 342px;
+  width: 832px;
+  text-align: center;
+  margin-left: -416px;
+  margin-top: -171px;
+  top: 50%;
+  left: 50%;
+}
+.home .header .content-home span{
+  display: block;
+  padding: 30px;
+}
+.home .header .content-home img{
+  width: 100px;
+  margin: 50px;
+}
+.about{
+  background-color: var(--color-primary);
+}
+.about .container{
+  display: flex;
+}
+.about .timing{
+  width: 33%;
+  padding: 15px;
+  background-image:url(../imgs/brush-big.jpg);
+  position: relative;
+  top:-40px;
+}
+.about .timing .overlay .icon-cut{
+  width: 60px;
+    
+}
+.about .experience{
+  width: 68%;
+}
+.about .timing .overlay{
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+  padding: 30px;
+}
+.about .timing .overlay h3{
+  font-family: Montserrat ,Arial, Helvetica, sans-serif;
+  color: var(--color-primary);
+  font-size: 30px;
+  width: fit-content;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-primary);
+  letter-spacing: 2px;
+  margin: 0 auto 50px auto;
+}
+.about .timing .text h4{
+  color: gray;
+  font-family: Raleway ,Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.about .timing .text span{
+  color: white;
+  font-family: Raleway ,Arial, Helvetica, sans-serif; 
+}
+.about .timing .text{
+  margin: 30px 0;
+}
+.about .timing .text:after{
+  content: "•";
+  display: block;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-top: 22px;
+}
+.about .timing .text:last-of-type::after{
+  content: "|";
+  display: block;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-top: 22px;
+}
+.about .timing .localization{
+  color: white;
+  font-family: Raleway ,Arial, Helvetica, sans-serif; 
+  display: block;
+  margin: 5px 0;
+}
+.about .container .experience{
+  background-color: #917758;
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.about .container .experience .text{
+  background-color: #917758;
+
+}
+.about .container .experience h4{
+  font-family: Raleway ,Arial, Helvetica, sans-serif; 
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+.about .container .experience h1{
+  font-family: Raleway ,Arial, Helvetica, sans-serif; 
+  color: white;
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.about .container .experience p{
+  font-family: Raleway ,Arial, Helvetica, sans-serif; 
+  color: white;
+  margin: 15px 0;
+  font-size: 22px;
+  text-align: justify;
+}
+.about .container .experience-img{
+  width: 400px;
+  height: 400px;
+}
+.about .container .experience h1:after{
+  display: block;
+  content:'';
+  width: 100px;
+  height: 3px;
+  background-color: #a38f78;
+  margin: 20px 0;
+}
+.services{
+  background-color: var(--color-primary-light);
+  height: 100vh;
+}
+.services .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .container h1{
+  font-family: Montserrat ,Arial;
+  color: var(--color-secondary);
+  align-self: center;
+  font-size: 50px;
+  margin: 30px 0;
+}
+.services .container .img-services{
+  width: 200px;
+  margin: 10px 0 70px 0;
+}
+.services .boxes .box{
+  border: 2px solid var(--color-secondary);
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 10px 30px;
+}
+.services .boxes .box img{
+  margin: 0 0 20px 0;
+
+}
+.services .boxes .box h4{
+  font-family: Montserrt , Arial, Helvetica, sans-serif;
+  color: var(--color-secondary);
+  margin: 20px 0;
+  font-size: 25px;
+}
+.services .boxes .box p{
+  font-family: Montserrt , Arial, Helvetica, sans-serif;
+  color: var(--color-secondary);
+  font-size: 17px;
+  text-align: center;
+}
+
+.services .boxes{
+  display: flex;
+  justify-content: space-around;
+}
+.agendamento{
+  background-color: var(--color-primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../imgs/chair-ic.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.agendamento h3{
+  font-family: Montserrat ,Arial, Helvetica, sans-serif;
+  margin: 30px 20px;
+  font-size: 60px;
+  font-weight: 300;
+  color: #ffff;
+}
+.agendamento img{
+  width: 200px;
+  margin: 30px;
+}
+.agendamento .formulario .personal-data{
+  display: flex;
+  justify-content: space-between;
+}
+.agendamento .formulario label{
+  display: block;
+  color: blanchedalmond;
+  font-family: Montserrat ,Arial, Helvetica, sans-serif;
+  font-size:25px;
+  margin-bottom:10px;
+}
+.agendamento .formulario .personal-data .form{
+  margin: 30px 30px 30px 0;
+}
+.agendamento .formulario .personal-data .form input{
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 8px;
+}
+.agendamento textarea{
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 8px;
+}
+.agendamento .formulario .personal-data .form select option{
+  color: black;
+  font-weight: bold;
+  font-family: Montserrat ,Arial, Helvetica, sans-serif;
+}
+.agendamento .formulario .personal-data .form select {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+}
+::placeholder{
+  color: black;
+  font-weight: bold;
+  font-family: Montserrat ,Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+
